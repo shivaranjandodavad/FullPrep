@@ -29,9 +29,5 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Check vulnerable NuGet packages
-      uses: elmahio/github-check-vulnerable-nuget-packages-action@v1
-      with:
-        project: "FullPrep"
-
+  
           
